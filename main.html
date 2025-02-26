@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Neighbour Property Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleLanguage() {
+            document.querySelectorAll('[data-en], [data-it]').forEach(el => {
+                const temp = el.innerText;
+                el.innerText = el.getAttribute('data-it');
+                el.setAttribute('data-it', temp);
+            });
+        }
+
+        // function toggleLanguage() {
+        //     document.querySelectorAll('[data-en], [data-it]').forEach(el => {
+        //         const temp = el.innerText;
+        //         el.innerText = el.getAttribute('data-it');
+        //         el.setAttribute('data-it', temp);
+        //     });
+
+        //     const toggle = document.getElementById('lang-toggle');
+        //     if (toggle.classList.contains('translate-x-full')) {
+        //         toggle.classList.remove('translate-x-full');
+        //         toggle.innerText = '🇬🇧';
+        //     } else {
+        //         toggle.classList.add('translate-x-full');
+        //         toggle.innerText = '🇮🇹';
+        //     }
+        // }
+
+        // function toggleLanguage() {
+        //     document
+        //         .querySelectorAll('[data-en], [data-it]')
+        //         .forEach(el => {
+        //             const temp = el.innerText;
+
+        //             console.log(el);
+        //             // el.innerText = el.getAttribute('data-it');
+        //             // el.setAttribute('data-it', temp);
+        //         });
+
+        //     // const ukFlag = document.getElementById('uk-flag');
+        //     // const itFlag = document.getElementById('it-flag');
+        //     // // const toggleContainer = document.getElementById('lang-toggle');
+
+        //     // ukFlag.classList.toggle('bg-white');
+        //     // // ukFlag.classList.toggle('opacity-50');
+        //     // itFlag.classList.toggle('opacity-100');
+        //     // itFlag.classList.toggle('opacity-50');
+
+        //     // if (ukFlag.classList.contains('opacity-100')) {
+        //     //     toggleContainer.classList.add('bg-white');
+        //     //     toggleContainer.classList.remove('bg-gray-300');
+        //     // } else {
+        //     //     toggleContainer.classList.add('bg-gray-300');
+        //     //     toggleContainer.classList.remove('bg-white');
+        //     // }
+        // }
+
+    </script>
+</head>
+
+<body class="bg-amber-500/10 text-gray-800">
+    <div class="max-w-2xl mx-auto p-6 text-center relative">
+
+        <!-- <button onclick="toggleLanguage()"
+            class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded">🇬🇧/🇮🇹</button> -->
+
+        <div class="p-1 text-right">
+            <button onclick="toggleLanguage()"
+                class="bg-gray-200 hover:bg-gray-400 text-white font-bold py-1 px-2 rounded-full">
+                🇬🇧 🇮🇹
+            </button>
+        </div>
+
+
+        <!-- <div class="inline-flex right-2">
+            <button onclick="toggleLanguage()"
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded-l">
+                🇬🇧
+            </button>
+            <button onclick="toggleLanguage()"
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded-r">
+                🇮🇹
+            </button>
+        </div> -->
+
+
+        <h1 class="text-3xl font-bold text-green-700">
+            Good Neighbour Property Care
+        </h1>
+
+        <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
+            <img src="images/title_picture.png" alt="Stefano's picture"
+                class="w-32 h-32 mx-auto rounded-full shadow-md">
+            <p class="mt-2 text-gray-700"
+                data-en="Hello! I'm Stefano, your trusted and reliable property care specialist in Tuscany. I offer flexible, on-demand services to keep your home impeccably maintained, looked after, and ready whenever you need it."
+                data-it="Ciao! Sono Stefano, il tuo specialista affidabile nella cura delle proprietà in Toscana. Offro servizi flessibili e su richiesta per mantenere la tua casa in perfette condizioni, ben curata e pronta ogni volta che ne hai bisogno.">
+                Hello! I'm Stefano, your trusted and reliable property care specialist in Tuscany. I offer flexible,
+                on-demand services to keep your home impeccably maintained, looked after, and ready whenever you need
+                it.
+            </p>
+        </div>
+
+        <div class="mt-6 bg-white p-6 rounded-lg shadow-md text-left">
+            <h2 class="text-2xl font-semibold text-green-600" data-en="🏡 Services Offered"
+                data-it="🏡 Servizi Offerti">🏡 Services Offered</h2>
+            <p class="text-gray-700 mt-2" data-en="Choose the services you need, when you need them."
+                data-it="Scegli i servizi di cui hai bisogno, quando ne hai bisogno.">Choose the services you need, when
+                you need them.</p>
+            <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+                <li data-en="🏠 Cleaning before/after arrival/departure"
+                    data-it="🏠 Pulizia prima/dopo l'arrivo/partenza">🏠 Cleaning before/after arrival/departure</li>
+                <li data-en="📦 Delivery handling & bringing items to your property"
+                    data-it="📦 Gestione delle consegne e trasporto degli articoli alla tua proprietà">📦 Delivery
+                    handling & bringing items to your property</li>
+                <li data-en="💳 Bill payments" data-it="💳 Pagamento bollette">💳 Bill payments</li>
+                <li data-en="📬 Mail collection" data-it="📬 Ritiro della posta">📬 Mail collection</li>
+                <li data-en="🛒 Fridge stocking before arrival" data-it="🛒 Rifornimento frigorifero prima dell'arrivo">
+                    🛒 Fridge stocking before arrival</li>
+                <li data-en="🌿 Gardening and outdoor maintenance" data-it="🌿 Giardinaggio e manutenzione esterna">🌿
+                    Gardening and outdoor maintenance</li>
+                <li data-en="🔧 Handyman services for small repairs & general maintenance"
+                    data-it="🔧 Servizi di manutenzione per piccole riparazioni">🔧 Handyman services for small repairs
+                    & general maintenance</li>
+                <li data-en="🔍 Occasional property check-ups on demand"
+                    data-it="🔍 Controlli occasionali della proprietà su richiesta">🔍 Occasional property check-ups on
+                    demand</li>
+                <li data-en="⛈️ Property inspections after bad weather"
+                    data-it="⛈️ Ispezioni della proprietà dopo maltempo">⛈️ Property inspections after bad weather</li>
+                <li data-en="🚗 Car & bike maintenance check-ups" data-it="🚗 Controllo manutenzione auto e moto">🚗 Car
+                    & bike maintenance check-ups</li>
+                <li data-en="🎥 Remote property monitoring with photo & video updates"
+                    data-it="🎥 Monitoraggio remoto della proprietà con aggiornamenti foto e video">🎥 Remote property
+                    monitoring with photo & video updates</li>
+                <li data-en="🛏️ Laundry & linen preparation" data-it="🛏️ Lavanderia e preparazione della biancheria">
+                    🛏️ Laundry & linen preparation</li>
+                <li data-en="📦 House stocking with essentials (food, toiletries, cleaning supplies, etc.)"
+                    data-it="📦 Rifornimento casa con articoli essenziali (cibo, prodotti per l'igiene, pulizia, ecc.)">
+                    📦 House stocking with essentials (food, toiletries, cleaning supplies, etc.)</li>
+            </ul>
+        </div>
+
+        <div class="mt-6 bg-white p-6 rounded-lg shadow-md text-center">
+            <h2 class="text-2xl font-semibold text-green-600" data-en="📞 Contact Me" data-it="📞 Contattami">📞 Contact
+                Me</h2>
+            <p class="text-gray-700 mt-4" data-en="For pricing and availability, contact me directly at"
+                data-it="Per prezzi e disponibilità, contattami direttamente a">For
+                pricing and availability, contact me directly at
+            </p>
+            <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                href="mailto:goodneighbourpropertycare@gmail.com">
+                goodneighbourpropertycare@gmail.com
+            </a>
+            <p class="text-gray-700" data-en="📍 Tuscany, Italy" data-it="📍 Toscana, Italia">📍 Tuscany, Italy</p>
+        </div>
+
+        <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-green-600">A Little Bit About Me</h2>
+            <p class="mt-2 text-gray-700"
+                data-en="I'm a former software engineer who lived in the UK for a decade. Owning a home in Italy, I understand the challenges of leaving a property unattended and relying on others to keep it safe. My experience has given me a deep appreciation for what it takes to properly care for a home—ensuring it stays well-maintained, secure, and always ready for your return."
+                data-it="Sono un ex ingegnere informatico che ha vissuto nel Regno Unito per dieci anni. Avendo una casa in Italia, capisco le difficoltà di lasciare una proprietà incustodita e dover dipendere da altri per la sua cura. La mia esperienza mi ha dato una profonda conoscenza di ciò che serve per mantenere una casa al meglio—assicurandone la manutenzione, la sicurezza e la prontezza per il tuo ritorno.">
+                I'm a former software engineer who lived in the UK for a decade. Owning a home in Italy, I understand
+                the challenges of leaving a property unattended and relying on others to keep it safe. My experience has
+                given me a deep appreciation for what it takes to properly care for a home—ensuring it stays
+                well-maintained, secure, and always ready for your return.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
