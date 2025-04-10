@@ -10,10 +10,10 @@
     <title>Good Neighbour Property Care</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2&display=swap">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -68,49 +68,49 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide relative h-[400px]">
-                <img src="images/checkup.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <img src="images/checkup.jpg" class="absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Property check-ups with photo & video updates
                 </div>
             </div>
 
             <div class="swiper-slide relative h-[400px]">
-                <img src="images/handyman.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <img src="images/handyman.jpg" class="absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Handyman & General maintenance
                 </div>
             </div>
 
             <div class="swiper-slide relative h-[400px]">
-                <img src="images/cleaning.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <img src="images/cleaning.jpg" class="absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Pre-arrival / post-departure cleaning
                 </div>
             </div>
 
             <div class="swiper-slide relative h-[400px]">
-                <img src="images/delivery.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <img src="images/delivery.jpg" class="absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Delivery handling & Mail collection
                 </div>
             </div>
 
             <div class="swiper-slide relative h-[400px]">
-                <img src="images/stocking.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <img src="images/stocking.jpg" class="absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Essentials stocking
                 </div>
             </div>
 
             <div class="swiper-slide relative h-[400px]">
-                <img src="images/gardening.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <img src="images/gardening.jpg" class="absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Gardening & outdoor maintenance
                 </div>
             </div>
 
             <div class="swiper-slide relative h-[400px]">
-                <img src="images/bills.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <img src="images/bills.jpg" class="absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Bill payments
                 </div>
@@ -118,8 +118,9 @@
       
           </div>
       
-          <!-- Navigation buttons -->
-          <div class="swiper-pagination"></div>
+            <!-- Navigation buttons -->
+            <div class="swiper-pagination"></div>
+
         </div>
     </section>
 
@@ -198,7 +199,10 @@
         },
         speed: 800,
         preloadImages: false,
-        lazy: true,
+        lazy: {
+            loadPrevNext: true,
+            loadOnTransitionStart: true,
+        },
         breakpoints: {
           320: { slidesPerView: 1.3 },
           768: { slidesPerView: 2.3 },
