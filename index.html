@@ -1,134 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/title_picture.png">
+
+    <link rel="icon" href="images/stefano.png">
+
     <title>Good Neighbour Property Care</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        function toggleLanguage() {
-            document.querySelectorAll('[data-it]').forEach(el => {
-                const temp = el.innerText;
-                el.innerText = el.getAttribute('data-it');
-                el.setAttribute('data-it', temp);
-            });
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                heading: ['Cormorant Garamond', 'serif']
+              }
+            }
+          }
         }
+      </script>
+      
 
-    </script>
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+
 </head>
 
-<body class="bg-orange-200/10 text-gray-800">
-    <div class="max-w-2xl mx-auto p-6 text-center relative">
+<body class="bg-white text-gray-900 font-sans">
 
-        <div class="p-1 text-right">
-            <button onclick="toggleLanguage()" data-it="Click here to switch language 🇬🇧"
-                class="bg-gray-200 hover:bg-gray-400 text-gray-600 text-xs font-bold py-1 px-2 rounded-full">
-                Clicca qui per cambiare lingua 🇮🇹
-            </button>
-        </div>
+    <!-- Intro Section -->
+    <section class="relative h-screen overflow-hidden">
 
-        <img src="images/logo.jpg" alt="Logo's picture" class="h-32 mx-auto">
-
-        <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
-            <img src="images/title_picture.png" alt="Stefano's picture" class=" h-32 mx-auto">
-            <p class="mt-2 text-gray-700"
-                data-it="Ciao! Sono Stefano, il tuo affidabile uomo di fiducia per la cura della tua proprietà in Toscana. Offro servizi flessibili e su richiesta per mantenere la tua casa in perfette condizioni, ben curata e pronta ogni volta che ne hai bisogno.">
-                Ciao! I'm Stefano, your trusted and reliable property care guy in Tuscany. I offer flexible,
-                on-demand services to keep your home impeccably maintained, looked after, and ready whenever you need
-                it.
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+          <source src="images/intro_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+      
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-semibold text-white drop-shadow-lg font-heading">
+              Good Neighbour Property Care
+            </h1>
+            <p class="mt-4 text-xl text-white max-w-2xl">
+              Trusted property care services in the heart of Tuscany
             </p>
+          </div>
+      
+      </section>
+  
+    <!-- Services Section -->
+    <section class="max-w-6xl mx-auto py-20 px-6">
+      <h2 class="text-3xl font-bold text-center mb-4 text-gray-800 font-heading">Services Offered</h2>
+      <p class="text-center max-w-xl mx-auto mb-8 text-gray-500">
+        Choose the services you need, when you need them.
+      </p>
+     
+        <div class="swiper shadow-lg overflow-hidden">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide relative h-[400px]">
+                <img src="images/checkup.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
+                    Property check-ups with photo & video updates
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-[400px]">
+                <img src="images/handyman.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
+                    Handyman & General maintenance
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-[400px]">
+                <img src="images/cleaning.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
+                    Pre-arrival / post-departure cleaning
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-[400px]">
+                <img src="images/delivery.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
+                    Delivery handling & Mail collection
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-[400px]">
+                <img src="images/stocking.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
+                    Essentials stocking
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-[400px]">
+                <img src="images/gardening.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
+                    Gardening & outdoor maintenance
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-[400px]">
+                <img src="images/bills.jpg" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
+                    Bill payments
+                </div>
+            </div> 
+      
+          </div>
+      
+          <!-- Navigation buttons -->
+          <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    
+  
+    <!-- Contact Section -->
+    <section class="bg-lime-800/20 py-20 px-6">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800 font-heading">Contact Me</h2>
+        <p class="text-gray-500 mb-4">
+          For pricing and availability, contact me directly at
+        </p>
+        <a class="text-blue-600 font-medium underline" href="mailto:goodneighbourpropertycare@gmail.com">
+          goodneighbourpropertycare@gmail.com
+        </a>
+      </div>
+    </section>
+
+    <!-- Area Coverage Section -->
+    <section class="py-20 px-6 ">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10 font-heading">Covered Area</h2>
+        
+        <p class="text-center max-w-xl mx-auto mb-8 text-gray-500">
+            Feel free to reach out, even if your area isn't highlighted. I'd be happy to see how I can help!
+        </p>
+
+        <div class="overflow-hidden shadow-xl w-full max-w-4xl mx-auto">
+            <img src="images/area.png" alt="Covered area" class="w-full h-auto mx-auto" />
         </div>
 
-        <div class="mt-6 bg-white p-6 rounded-lg shadow-md text-left">
-            <h2 class="text-2xl font-semibold text-lime-800 text-center" data-it="Servizi Offerti">
-                Services Offered
-            </h2>
-            <p class="text-gray-700 mt-2 text-center"
-                data-it="Scegli i servizi di cui hai bisogno, quando ne hai bisogno.">
-                Choose the services you need, when you need them.
+    </section>
+  
+    <!-- About Section -->
+      <section class="max-w-6xl mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          
+          <!-- Left Side: Text -->
+          <div>
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800 font-heading">About Me</h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+              Hi, I’m Stefano — a former software engineer turned full-time property care expert based in beautiful Tuscany.
             </p>
-            <ul class="pl-5 mt-4 space-y-2 text-gray-700">
-                <li data-it="🧹 Pulizia pre-arrivo/post-partenza">
-                    🧹 Pre-arrival/post-departure cleaning
-                </li>
-                <li data-it="📦 Gestione delle consegne e trasporto degli articoli alla tua proprietà">
-                    📦 Delivery handling & bringing items to your property
-                </li>
-                <li data-it="💳 Pagamento delle bollette">
-                    💳 Bill payments
-                </li>
-                <li data-it="📬 Ritiro della posta">
-                    📬 Mail collection
-                </li>
-                <li data-it="🛒 Spesa pre-arrivo o approvvigionamento di articoli essenziali per la casa">
-                    🛒 Pre-arrival grocery shopping or home essentials stocking
-                </li>
-                <li data-it="🌿 Giardinaggio e manutenzione esterna">
-                    🌿 Gardening and outdoor maintenance
-                </li>
-                <li data-it="🔧 Servizi di manutentore per piccole riparazioni e manutenzione generale">
-                    🔧 Handyman services for small repairs & general maintenance
-                </li>
-                <li data-it="🏠 Controlli occasionali della proprietà su richiesta">
-                    🏠 Occasional property check-ups on demand
-                </li>
-                <li data-it="⛈️ Ispezioni della proprietà dopo maltempo">
-                    ⛈️ Property inspections after bad weather
-                </li>
-                <li data-it="🩺 Controlli di manutenzione per elettrodomestici e biciclette">
-                    🩺 Appliance & bike maintenance check-ups
-                </li>
-                <li data-it="🎥 Monitoraggio remoto della proprietà con aggiornamenti foto e video">
-                    🎥 Remote property monitoring with photo & video updates
-                </li>
-            </ul>
-        </div>
-
-        <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-semibold text-lime-800" data-it="Contattami">
-                Contact Me
-            </h2>
-            <p class="text-gray-700 mt-4" data-it="Per prezzi e disponibilità, contattami direttamente a">
-                For pricing and availability, contact me directly at
+            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+              After over a decade working in the UK tech world while managing my own Tuscan home from afar, I realized how challenging it is to maintain a property remotely. That experience inspired me to create Good Neighbour Property Care — a service built around trust, flexibility, and the little details that make a house feel like home.
             </p>
-            <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                href="mailto:goodneighbourpropertycare@gmail.com">
-                goodneighbourpropertycare@gmail.com
-            </a>
-        </div>
-
-        <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-semibold text-lime-800" data-it="Chi Sono">
-                About Me
-            </h2>
-            <p class="mt-2 text-gray-700"
-                data-it="Ho lavorato nel Regno Unito come ingegnere del software per oltre un decennio, mentre possedevo una proprietà nella mia amata Toscana. Dopo alcuni anni di viaggi avanti e indietro, ristrutturare e mantenere la mia casa vivendo in un altro paese è diventato una sfida, e mi sono reso conto che il mio lavoro d’ufficio non era ciò che volevo fare per il resto della mia vita. Così ho deciso di tornare in Italia e mettere a frutto le mie competenze nella gestione delle proprietà, aiutando persone come me, con seconde case tra le colline toscane, a mantenere le loro abitazioni sicure, accoglienti e curate tutto l’anno.
-
-                Il mio obiettivo principale è offrire una gamma di servizi su richiesta, con un tocco personale e amichevole. Che si tratti di riempire il frigo con la tua mozzarella preferita, controllare la corrente dopo un grosso temporale o semplicemente ritirare la tua posta, voglio essere una presenza affidabile che si prende cura della tua casa a distanza, proprio come farebbe un buon vicino.
-                
-                Se pensi che potrei esserti d’aiuto, scrivimi un’email! Mi farebbe piacere sentirti, o magari incontrarci per un caffè e fare due chiacchiere su qualsiasi tua esigenza, grande o piccola.">
-                I worked in the UK as a software engineer for over a decade, while owning a property
-                back home in Tuscany. After a few years travelling back and forth, renovating and maintaining my house
-                while living in another country became a challenge, and I realised that my desk job wasn’t what I wanted
-                to do with my life. I decided to move back to Italy and put my property skills to good use — helping
-                people like me, with second homes in the Tuscan hills, keep their properties safe, welcoming and secure
-                all year round.
-                <br>
-                <br>
-                My main goal is to offer a wide range of on-demand services with a friendly, personal touch. Be it
-                filling the fridge with your favourite mozzarella, checking up on your electricity after an epic storm
-                or just collecting your post for you, I want to be a friendly face looking out for your property from
-                afar, like a good neighbour would.
-                <br>
-                <br>
-                If you think I might be able to help you, just drop me an email. I’d love to speak to you, or even meet
-                for coffee and a chat about whatever you might need, big or small.
+            <p class="text-gray-700 text-lg leading-relaxed">
+              I’d love to hear from you — whether it’s to arrange services or just chat over coffee about how I can help take care of your home in Tuscany.
             </p>
+          </div>
+      
+          <!-- Right Side: Image -->
+          <div class="relative group">
+            <div class="rounded-2xl overflow-hidden shadow-xl transform transition">
+              <img src="images/stefano.png" alt="Stefano profile" class="w-full h-auto" />
+            </div>
+          </div>
+      
         </div>
-    </div>
-</body>
+      </section>
+
+  </body>
+
+  <!-- Swiper Config -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      new Swiper(".swiper", {
+        spaceBetween: 5,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        speed: 800,
+        preloadImages: false,
+        lazy: true,
+        breakpoints: {
+          320: { slidesPerView: 1.3 },
+          768: { slidesPerView: 2.3 },
+          1024: { slidesPerView: 3.3 },
+        },
+      });
+    });
+  </script>
 
 </html>
