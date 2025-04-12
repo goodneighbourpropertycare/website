@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Property care and maintenance services in Tuscany — including cleaning, repairs, stocking, and more, by a trusted local expert.">
 
     <title>Good Neighbour Property Care</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2&display=swap">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,7 +39,7 @@
     <!-- Intro Section -->
     <section class="relative h-screen overflow-hidden">
 
-        <img src="images/tuscany_landscape.jpg" alt="Tuscany landscape" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <img src="images/tuscany_landscape.jpg" alt="Tuscany landscape" class="absolute inset-0 w-full h-full object-cover z-0" loading="lazy"/>
 
         <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
             <h1 class="text-4xl md:text-5xl font-semibold text-white drop-shadow-lg font-heading">
@@ -62,49 +62,49 @@
         <div class="swiper shadow-lg overflow-hidden">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide relative h-[400px]">
+            <div class="swiper-slide relative h-[400px] transition transform hover:scale-105">
                 <img src="images/checkup.jpg" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Property check-ups with photo & video updates
                 </div>
             </div>
 
-            <div class="swiper-slide relative h-[400px]">
+            <div class="swiper-slide relative h-[400px] transition transform hover:scale-105">
                 <img src="images/handyman.jpg" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Handyman & Small repairs
                 </div>
             </div>
 
-            <div class="swiper-slide relative h-[400px]">
+            <div class="swiper-slide relative h-[400px] transition transform hover:scale-105">
                 <img src="images/cleaning.jpg" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Pre-arrival / Post-departure cleaning
                 </div>
             </div>
 
-            <div class="swiper-slide relative h-[400px]">
+            <div class="swiper-slide relative h-[400px] transition transform hover:scale-105">
                 <img src="images/delivery.jpg" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Delivery handling & Mail collection
                 </div>
             </div>
 
-            <div class="swiper-slide relative h-[400px]">
+            <div class="swiper-slide relative h-[400px] transition transform hover:scale-105">
                 <img src="images/stocking.jpg" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Grocery & Supplies stocking
                 </div>
             </div>
 
-            <div class="swiper-slide relative h-[400px]">
+            <div class="swiper-slide relative h-[400px] transition transform hover:scale-105">
                 <img src="images/gardening.jpg" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     General maintenance
                 </div>
             </div>
 
-            <div class="swiper-slide relative h-[400px]">
+            <div class="swiper-slide relative h-[400px] transition transform hover:scale-105">
                 <img src="images/bills.jpg" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                     Bill payments
@@ -159,13 +159,13 @@
             and surrounding areas.
         </p>
 
-        <div class="overflow-hidden shadow-xl w-full max-w-4xl mx-auto cursor-zoom-in">
-            <img id="coveredImage" src="images/area.jpg" alt="Covered area" class="w-full h-auto mx-auto" />
+        <div class="overflow-hidden shadow-xl w-full max-w-4xl mx-auto cursor-zoom-in transition transform hover:scale-105">
+            <img id="coveredImage" src="images/area.jpg" alt="Map showing areas served around Tuscany" class="w-full h-auto mx-auto" />
         </div>
       
         <!-- Lightbox Overlay -->
-        <div id="lightboxOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
-          <img src="images/area.jpg" alt="Zoomed covered area" class="max-w-full max-h-full cursor-zoom-out" />
+        <div id="lightboxOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden" role="dialog" aria-modal="true">
+          <img src="images/area.jpg" alt="Map showing areas served around Tuscany" class="max-w-full max-h-full cursor-zoom-out"/>
         </div>
 
     </section>
@@ -191,7 +191,7 @@
           <!-- Right Side: Image -->
           <div class="relative group">
             <div class="rounded-2xl overflow-hidden shadow-xl transform transition mx-auto max-w-xs">
-              <img src="images/stefano.jpg" alt="Stefano profile" class="w-full h-auto" />
+              <img src="images/stefano.jpg" alt="Stefano portrait" class="w-full h-auto" />
             </div>
           </div>
       
@@ -204,7 +204,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       new Swiper(".swiper", {
-        spaceBetween: 5,
+        // spaceBetween: 5,
         loop: true,
         autoplay: {
           delay: 4000,
@@ -236,10 +236,17 @@
 
     image.addEventListener("click", () => {
       lightbox.classList.remove("hidden");
+      lightbox.focus();
     });
 
     lightbox.addEventListener("click", () => {
       lightbox.classList.add("hidden");
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.classList.add("hidden");
+      }
     });
   </script>
 
