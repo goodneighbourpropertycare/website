@@ -161,8 +161,13 @@
             and surrounding areas.
         </p>
 
-        <div class="overflow-hidden shadow-xl w-full max-w-4xl mx-auto">
-            <img src="images/area.jpg" alt="Covered area" class="w-full h-auto mx-auto" />
+        <div class="overflow-hidden shadow-xl w-full max-w-4xl mx-auto cursor-zoom-in">
+            <img id="coveredImage" src="images/area.jpg" alt="Covered area" class="w-full h-auto mx-auto" />
+        </div>
+      
+        <!-- Lightbox Overlay -->
+        <div id="lightboxOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+          <img src="images/area.jpg" alt="Zoomed covered area" class="max-w-full max-h-full cursor-zoom-out" />
         </div>
 
     </section>
@@ -223,6 +228,20 @@
           1024: { slidesPerView: 3.3 },
         },
       });
+    });
+  </script>
+
+  <!-- Covered Area Script -->
+  <script>
+    const image = document.getElementById("coveredImage");
+    const lightbox = document.getElementById("lightboxOverlay");
+
+    image.addEventListener("click", () => {
+      lightbox.classList.remove("hidden");
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.add("hidden");
     });
   </script>
 
