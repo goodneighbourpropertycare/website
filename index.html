@@ -8,37 +8,14 @@
 
     <title>Good Neighbour Property Care</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cstyle%3E@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700'); text { font-family: Cormorant Garamond, serif; }%3C/style%3E%3Ccircle cx='50' cy='50' r='48' fill='white'/%3E%3Ctext x='50%' y='55%' text-anchor='middle' dominant-baseline='middle' font-size='48' fill='black'%3EGN%3C/text%3E%3C/svg%3E">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              fontFamily: {
-                heading: ['Cormorant Garamond', 'serif']
-              }
-            }
-          }
-        }
-    </script>
       
-    <style>
-        html {
-          scroll-behavior: smooth;
-        }
-
-        .swiper-slide .inset-0 {
-          transition: all 0.3s ease;
-        }
-        .swiper-slide:hover .inset-0 {
-          background-color: rgba(0,0,0,0.55);
-        }
-    </style>
 
 </head>
 
@@ -51,13 +28,13 @@
       <img src="images/tuscany_landscape.webp" alt="Tuscany landscape" class="absolute inset-0 w-full h-full object-cover z-0" loading="eager"/>
 
       <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white drop-shadow-lg" translate="no">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl text-white drop-shadow-lg" translate="no">
             GOOD NEIGHBOUR
           </h1>
-          <p class="text-xl md:text-2xl lg:text-3xl tracking-[0.35em] font-semibold text-white drop-shadow-lg" translate="no">
+          <h1 class="text-xl md:text-2xl lg:text-3xl tracking-[0.35em] font-semibold text-white drop-shadow-lg" translate="no">
             PROPERTY CARE
-          </p>
-          <p class="text-xl md:text-2xl lg:text-3xl mt-4 text-white max-w-2xl font-heading">
+          </h1>
+          <p class="text-xl md:text-2xl lg:text-3xl mt-4 text-white max-w-2xl">
             Trusted property care services in the heart of Tuscany
           </p>
       </div>
@@ -67,7 +44,7 @@
     <!-- Services Section -->
     <section class="max-w-6xl mx-auto py-20 px-6">
     <h2 class="text-2xl text-center mb-4 text-gray-600">SERVICES OFFERED</h2>
-    <p class="text-lg text-center max-w-xl mx-auto mb-8 text-gray-700 font-heading">
+    <p class="text-lg text-center max-w-xl mx-auto mb-8 text-gray-700">
       Pick the services that make life easier - I'll take care of the rest
     </p>
 
@@ -76,56 +53,56 @@
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
               <img src="images/checkup.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                   Property check-ups with photo & video updates
               </div>
           </div>
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
               <img src="images/handyman.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                   Handyman help & small repairs
               </div>
           </div>
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
               <img src="images/cleaning.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                   Pre-arrival / Post-departure cleaning
               </div>
           </div>
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
               <img src="images/delivery.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                   Mail collection & delivery handling
               </div>
           </div>
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
               <img src="images/stocking.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                   Grocery shopping & supplies stocking
               </div>
           </div>
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
               <img src="images/maintenance.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                   General maintenance
               </div>
           </div>
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
             <img src="images/airbnb.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-            <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                 Airbnb guest check-ins & preparation
             </div>
         </div>
 
           <div class="swiper-slide relative h-[300px] md:h-[400px] transition transform hover:scale-105">
               <img src="images/bills.webp" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center font-heading">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold p-8 text-center">
                   Bill payments
               </div>
           </div> 
@@ -143,15 +120,26 @@
       <div class="max-w-xl mx-auto text-center">
         <h2 class="text-2xl mb-4 text-gray-600">CONTACT ME</h2>
         
-        <p class="text-lg text-gray-700 mb-4 font-heading">
+        <p class="text-lg text-gray-700 mb-4">
           The services listed above are just a sample of what I offer. Every home and situation is unique — feel free to reach out to ask about additional services or to discuss a custom care plan that suits your needs.
         </p>
 
-        <p class="text-lg text-gray-700 mb-4 font-heading">
+        <p class="text-lg text-gray-700 mb-4">
           For pricing and availability, contact me directly at
         </p>
         <a class="text-lg text-blue-600 font-medium underline" href="mailto:goodneighbourpropertycare@gmail.com">
           goodneighbourpropertycare@gmail.com
+        </a>
+
+        <p class="text-lg text-gray-700 mt-4">
+          or message me directly on WhatsApp:
+        </p>
+        <!-- <a class="text-lg text-green-600 font-medium underline" href="https://wa.me/+393755356291?text=Hi%20Stefano%2C%20I'm%20interested%20in%20your%20property%20care%20services." target="_blank" rel="noopener">
+          Chat on WhatsApp
+        </a> -->
+        <a class="text-green-600 text-2xl inline-flex items-center gap-2 hover:text-green-700 mt-4" href="https://wa.me/+393755356291" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> 
+          <span class="text-base">WhatsApp</span>
         </a>
 
       </div>
@@ -161,11 +149,11 @@
     <section class="pt-20 pb-12 px-6">
       <h2 class="text-2xl text-center text-gray-600 mb-10">COVERED AREA</h2>
       
-      <p class="text-lg text-center max-w-xl mx-auto mb-8 text-gray-700 font-heading">
+      <p class="text-lg text-center max-w-xl mx-auto mb-8 text-gray-700">
           Feel free to reach out, even if your area isn't highlighted. I'd be happy to see how I can help!
       </p>
 
-      <p class="text-lg text-center text-gray-700 mb-8 font-heading">
+      <p class="text-lg text-center text-gray-700 mb-8">
         Key areas covered include: 
           <span class="font-medium text-gray-900">Marti</span>,
           <span class="font-medium text-gray-900">Palaia</span>,
@@ -194,16 +182,16 @@
         <!-- Left Side: Text -->
         <div>
           <h2 class="text-2xl mb-6 text-center text-gray-600">ABOUT ME</h2>
-          <p class="text-lg text-gray-700 leading-relaxed mb-4 font-heading">
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
             Ciao, I’m Stefano — a former software engineer turned full-time property care expert, based in the heart of Tuscany.
           </p>
-          <p class="text-lg text-gray-700 leading-relaxed mb-4 font-heading">
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
             While living and working in the UK, I managed my Tuscan home from abroad — and quickly learned how challenging it can be to look after a property from a distance. That experience inspired me to start <em>Good Neighbour Property Care:</em> a service built on trust, flexibility, and a commitment to keeping homes safe, welcoming, and well looked after all year round. 
           </p>
-          <p class="text-lg text-gray-700 leading-relaxed mb-4 font-heading">
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
             Whether it’s stocking the fridge with your favourites, checking the power after a storm, collecting your mail, keeping your home clean, making small repairs, or taking care of ongoing maintenance — I aim to be the kind of local presence you’d want nearby. Like a good neighbour would.
           </p>
-          <p class="text-lg text-gray-700 leading-relaxed font-heading">
+          <p class="text-lg text-gray-700 leading-relaxed">
             If you think I could help, feel free to drop me an email. I’d love to chat — or even meet over coffee to talk about what you might need, big or small.
           </p>
         </div>

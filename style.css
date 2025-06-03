@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-slide .inset-0 {
+  transition: all 0.3s ease;
+}
+.swiper-slide:hover .inset-0 {
+  background-color: rgba(0,0,0,0.55);
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
